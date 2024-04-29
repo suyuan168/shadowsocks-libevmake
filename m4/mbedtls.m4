@@ -34,9 +34,6 @@ AC_DEFUN([ss_MBEDTLS],
 #include <mbedtls/config.h>
       ]],
       [[
-#ifndef MBEDTLS_CIPHER_MODE_CFB
-#error Cipher Feedback mode a.k.a CFB not supported by your mbed TLS.
-#endif
       ]]
     )],
     [AC_MSG_RESULT([ok])],
